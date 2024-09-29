@@ -1,6 +1,13 @@
 // src/App.jsx
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
+const [mailboxes, setMailboxes] = useState([])
+//state variables
+
+const addBox = (formData) => {
+  setMailboxes(formData)
+}
 
 const App = () => {
   return(
